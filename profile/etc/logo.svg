@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <!-- Gradient for the T body -->
+    <linearGradient id="tGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE500"/>
+      <stop offset="100%" stop-color="#7f7200"/>
+    </linearGradient>
+    <!-- Subtle radial glow behind the T -->
+    <radialGradient id="glow" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#FFE500" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#FFE500" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Hex fill gradient -->
+    <linearGradient id="hexFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c1c22"/>
+      <stop offset="100%" stop-color="#101014"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="200" fill="#111115" rx="4"/>
+  
+  <!-- Hexagon border -->
+  <path d="M 100.0,17.0 L 171.9,58.5 L 171.9,141.5 L 100.0,183.0 L 28.1,141.5 L 28.1,58.5 Z" fill="#332d00" opacity="0.7"/>
+  <path d="M 100.0,21.0 L 168.4,60.5 L 168.4,139.5 L 100.0,179.0 L 31.6,139.5 L 31.6,60.5 Z" fill="url(#hexFill)"/>
+  
+  <!-- Subtle glow -->
+  <circle cx="100" cy="90" r="70" fill="url(#glow)"/>
+  
+  <!-- T crossbar -->
+  <rect x="54" y="44" width="92" height="16" rx="3" ry="3" fill="url(#tGrad)"/>
+  
+  <!-- T stem -->
+  <rect x="89" y="59" width="22" height="97" fill="url(#tGrad)"/>
+  
+  <!-- T base (slight widening) -->
+  <polygon points="89,153 111,153 118,163 82,163" fill="url(#tGrad)"/>
+  
+  <!-- Eye almond outline -->
+  <path d="M 79,101 Q 100,87 121,101 Q 100,115 79,101 Z" fill="#FFE500"/>
+  <path d="M 81.5,101 Q 100,89.5 118.5,101 Q 100,112.5 81.5,101 Z" fill="#151518"/>
+  
+  <!-- Iris ring -->
+  <circle cx="100" cy="101" r="10" fill="#FFE500" opacity="0.95"/>
+  <!-- Iris inner dark -->
+  <circle cx="100" cy="101" r="8" fill="#151518"/>
+  <!-- Pupil -->
+  <circle cx="100" cy="101" r="4" fill="#FFE500"/>
+  <!-- Pupil center dark dot -->
+  <circle cx="100" cy="101" r="2.5" fill="#0a0a0e"/>
+  
+  <!-- Subtle highlight on pupil -->
+  <circle cx="101.5" cy="99.5" r="1" fill="#FFE500" opacity="0.5"/>
+</svg>
